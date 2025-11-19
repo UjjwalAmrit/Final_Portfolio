@@ -1,6 +1,22 @@
-node_modules
-dist
-.DS_Store
-server/public
-vite.config.ts.*
-*.tar.gz
+# Dependency Directories
+# -----------------
+/node_modules
+/client/node_modules
+/server/node_modules
+
+# -----------------
+# Build and Output Directories 
+# -----------------
+/client/dist
+/client/build
+/client/.next
+/server/dist
+
+# -----------------
+# Environment Variables (CRITICAL: Never commit secrets)
+# -----------------
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local

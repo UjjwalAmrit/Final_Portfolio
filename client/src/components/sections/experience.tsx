@@ -1,35 +1,19 @@
 export default function Experience() {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "TechCorp Solutions",
-      period: "2023 - Present",
-      description: "Leading development of scalable web applications using React, Node.js, and AWS. Mentoring junior developers and implementing best practices for code quality and deployment.",
-      tech: ["React", "Node.js", "AWS", "Team Leadership"],
-      type: "work"
-    },
-    {
       title: "Full Stack Developer",
-      company: "Digital Innovations Ltd.",
-      period: "2022 - 2023", 
-      description: "Developed and maintained multiple client projects using modern web technologies. Collaborated with design teams to implement pixel-perfect user interfaces.",
-      tech: ["Vue.js", "Express", "MongoDB", "UI/UX"],
-      type: "work"
-    },
-    {
-      title: "Frontend Developer",
-      company: "StartupXYZ",
-      period: "2021 - 2022",
-      description: "Built responsive web applications from scratch using React and TypeScript. Worked closely with product team to deliver user-focused features.",
-      tech: ["React", "TypeScript", "SCSS", "Agile"],
+      company: "ReboRise",
+      period: "2025 - Present",
+      description: "Built responsive web applications from scratch using React and NodeJs. Working closely with product team to deliver user-focused features.",
+      tech: ["React", "Express", "MongoDB", "Agile"],
       type: "work"
     },
     {
       title: "Bachelor of Computer Science",
-      company: "University of Technology", 
-      period: "2018 - 2021",
-      description: "Focused on software engineering principles, algorithms, and modern web development. Graduated with honors and completed multiple industry-relevant projects.",
-      tech: ["Computer Science", "Software Engineering", "Algorithms", "Honors"],
+      company: "G L Bajaj Institute Of Technology and Management", 
+      period: "2022 - 2026",
+      description: "Focused on software engineering principles, algorithms, and modern web development. Graduating with honors and completing multiple industry-relevant projects.",
+      tech: ["Computer Science", "Software Engineering", "Algorithms", "System Design"],
       type: "education"
     }
   ];

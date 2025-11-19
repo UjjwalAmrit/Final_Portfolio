@@ -3,52 +3,28 @@ import { Button } from "@/components/ui/button";
 export default function Projects() {
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, shopping cart, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      demoUrl: "#",
-      codeUrl: "#"
+      title: "Chatguard AI",
+      description: "Engineered a real-time, secure video conferencing platform using WebRTC and Socket.io, featuring AI-powered moderation with Perspective API to automatically blur toxic messages.",
+      image: "chatguard.png",
+      tech: ["WebRTC", "Socket.io", "Bcrypt", "Perspective API", "AWS"],
+      demoUrl: "https://chatguardai.online/",
+      codeUrl: "https://github.com/UjjwalAmrit/Chatguard-AI"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      tech: ["Next.js", "TypeScript", "Socket.io", "PostgreSQL"],
-      demoUrl: "#",
-      codeUrl: "#"
+      title: "WanderLust",
+      description: "Architected a robust MVC-based travel marketplace using Node.js/Express.js, implementing secure JWT authentication, optimized MongoDB schemas, and integrated Cloudinary for image storage.",
+      image: "wanderlust.png",
+      tech: ["MVC Framwork", "JWT", "Cloudinary", "Mongo Atlas"],
+      demoUrl: "https://first-major-project.onrender.com/listings",
+      codeUrl: "https://github.com/UjjwalAmrit/First_major_project"
     },
     {
-      title: "Weather Dashboard",
-      description: "A comprehensive weather application with interactive charts, location-based forecasts, and beautiful data visualizations.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      tech: ["Vue.js", "Chart.js", "API Integration", "PWA"],
-      demoUrl: "#",
-      codeUrl: "#"
-    },
-    {
-      title: "Social Media Platform",
-      description: "A full-featured social media platform with posts, comments, likes, real-time messaging, and user profiles.",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      tech: ["React", "Express", "GraphQL", "Redis"],
-      demoUrl: "#",
-      codeUrl: "#"
-    },
-    {
-      title: "Learning Management System",
-      description: "An educational platform for online courses with video streaming, quizzes, progress tracking, and instructor tools.",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      tech: ["Django", "React", "AWS", "Docker"],
-      demoUrl: "#",
-      codeUrl: "#"
-    },
-    {
-      title: "Cryptocurrency Tracker",
-      description: "A real-time cryptocurrency tracking application with portfolio management, price alerts, and detailed market analytics.",
-      image: "https://images.unsplash.com/photo-1642790106117-e829e14a795f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      tech: ["Angular", "WebSocket", "D3.js", "Firebase"],
-      demoUrl: "#",
-      codeUrl: "#"
+      title: "Contest platform for MBA Students",
+      description: "Engineered a high-performance, fully responsive user interface using React.js and Vite, centralizing global state management with Redux Toolkit and implementing secure client-side routing.",
+      image: "contest.png",
+      tech: ["React.js", "Vite", "Redux Toolkit", "Tailwind CSS"],
+      demoUrl: "https://mba-contest-platform.vercel.app/",
+      codeUrl: "https://github.com/UjjwalAmrit/Management"
     }
   ];
 

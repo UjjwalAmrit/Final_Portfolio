@@ -61,9 +61,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-card-foreground mb-4">Get In Touch</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>ujjwal.amrit@example.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>ujjwalamrit54321@gmail.com</p>
+              <p>+91 706-1864-269</p>
+              <p>Noida ,India</p>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground">
-            © 2024 Ujjwal Amrit. All rights reserved. Built with passion and modern web technologies.
+            © 2025 Ujjwal Amrit. All rights reserved. Built with passion and modern web technologies.
           </p>
         </div>
       </div>

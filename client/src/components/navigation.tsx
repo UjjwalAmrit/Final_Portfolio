@@ -36,13 +36,13 @@ export default function Navigation() {
     <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 -ml-24 sm:-ml-16 lg:-ml-24">
             <button 
               onClick={() => scrollToSection("#home")}
               className="text-xl font-bold gradient-text"
               data-testid="nav-logo"
             >
-              Ujjwal Amrit
+              <img src="logo.png " className="h-48"></img>
             </button>
           </div>
 

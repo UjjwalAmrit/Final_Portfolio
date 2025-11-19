@@ -3,32 +3,27 @@ export default function Skills() {
     {
       title: "Frontend Development",
       icon: "fas fa-laptop-code",
-      skills: ["React.js & Next.js", "TypeScript & JavaScript", "Tailwind CSS & SCSS", "Vue.js & Nuxt.js"]
+      skills: ["React.js", "JavaScript", "Tailwind CSS & Vanilla CSS"]
     },
     {
       title: "Backend Development", 
       icon: "fas fa-server",
-      skills: ["Node.js & Express", "Python & Django", "REST APIs & GraphQL", "Microservices Architecture"]
+      skills: ["Node.js & Express", "REST APIs", "Microservices Architecture"]
     },
     {
       title: "Database & Cloud",
       icon: "fas fa-database", 
-      skills: ["MongoDB & PostgreSQL", "AWS & Azure", "Docker & Kubernetes", "Redis & Firebase"]
+      skills: ["MongoDB & PostgreSQL", "Amazon Web Service", "Docker & Kubernetes"]
     },
     {
       title: "Tools & DevOps",
       icon: "fas fa-tools",
-      skills: ["Git & GitHub", "CI/CD Pipelines", "Jest & Testing", "Webpack & Vite"]
+      skills: ["Git & GitHub", "CI/CD Pipelines"]
     },
     {
       title: "Design & UX",
       icon: "fas fa-paint-brush",
-      skills: ["Figma & Adobe XD", "UI/UX Principles", "Responsive Design", "Accessibility (a11y)"]
-    },
-    {
-      title: "Mobile Development",
-      icon: "fas fa-mobile-alt", 
-      skills: ["React Native", "Flutter & Dart", "Progressive Web Apps", "Cross-platform Development"]
+      skills: ["Figma", "UI/UX Principles", "Responsive Design"]
     }
   ];
 
@@ -43,7 +38,7 @@ export default function Skills() {
         </div>
         
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {skillCategories.map((category, index) => (
             <div 
               key={index}

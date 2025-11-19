@@ -13,7 +13,7 @@ export default function About() {
           {/* Developer at work image */}
           <div className="order-2 md:order-1">
             <img 
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+              src="about.png" 
               alt="Developer working on multiple monitors with code" 
               className="rounded-xl shadow-lg w-full h-auto"
             />
@@ -26,7 +26,7 @@ export default function About() {
             
             <div className="space-y-4 text-muted-foreground text-lg">
               <p>
-                I'm a passionate full stack developer with over 3 years of experience in creating 
+                I'm a passionate full stack developer with over 2 years of experience in creating 
                 robust web applications. My journey started with curiosity about how websites work, 
                 and it has evolved into a deep passion for building scalable, user-friendly solutions.
               </p>
@@ -46,11 +46,11 @@ export default function About() {
             {/* Key highlights */}
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="text-center p-4 bg-card rounded-lg border border-border">
-                <div className="text-2xl font-bold text-primary">50+</div>
+                <div className="text-2xl font-bold text-primary">20+</div>
                 <div className="text-muted-foreground">Projects Completed</div>
               </div>
               <div className="text-center p-4 bg-card rounded-lg border border-border">
-                <div className="text-2xl font-bold text-primary">3+</div>
+                <div className="text-2xl font-bold text-primary">2+</div>
                 <div className="text-muted-foreground">Years Experience</div>
               </div>
             </div>

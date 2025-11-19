@@ -59,7 +59,7 @@ export default function Hero() {
           {/* Professional developer portrait */}
           <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary to-secondary p-1">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=500" 
+              src="hero.png" 
               alt="Ujjwal Amrit - Professional Developer Portrait" 
               className="w-full h-full rounded-full object-cover"
             />
@@ -93,6 +93,7 @@ export default function Hero() {
             >
               Get In Touch
             </Button>
+            <a href="/Ujjwal_Resume.pdf" download={"Ujjwal_Resume.pdf"} className="inline-flex">
             <Button 
               variant="ghost" 
               className="inline-flex items-center gap-2 text-primary hover:text-primary/80"
@@ -101,35 +102,42 @@ export default function Hero() {
               <i className="fas fa-download" />
               Download CV
             </Button>
+            </a>
           </div>
           
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mt-8">
             <a 
-              href="#" 
+              href="https://github.com/UjjwalAmrit" 
               className="text-muted-foreground hover:text-primary transition-colors duration-200 text-2xl"
               data-testid="social-github"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-github" />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/ujjwalamrit/" 
               className="text-muted-foreground hover:text-primary transition-colors duration-200 text-2xl"
               data-testid="social-linkedin"
             >
               <i className="fab fa-linkedin" />
             </a>
             <a 
-              href="#" 
+              href="https://x.com/AMRITUJJWAL07" 
               className="text-muted-foreground hover:text-primary transition-colors duration-200 text-2xl"
               data-testid="social-twitter"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-twitter" />
             </a>
             <a 
-              href="#" 
+              href="mailto:ujjwalamrit54321@gmail.com?subject=Inquiry%20from%20Portfolio%20Website" 
               className="text-muted-foreground hover:text-primary transition-colors duration-200 text-2xl"
               data-testid="social-email"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fas fa-envelope" />
             </a>

@@ -13,6 +13,7 @@ import type { InsertContactMessage } from "@shared/schema";
 
 export default function Contact() {
   const { toast } = useToast();
+  // Changed to rely primarily on the mutation's state, but kept for clarity/button control
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<InsertContactMessage>({
@@ -28,10 +29,13 @@ export default function Contact() {
   const contactMutation = useMutation({
     mutationFn: (data: InsertContactMessage) => 
       apiRequest("POST", "/api/contact", data),
+    
+    // 🚀 UPDATED SUCCESS HANDLER
     onSuccess: () => {
       toast({
         title: "Message sent successfully!",
-        description: "I'll get back to you soon.",
+        // Notify the user about the confirmation email
+        description: "I'll get back to you soon. A confirmation email has been sent to your inbox.",
       });
       form.reset();
       setIsSubmitting(false);
@@ -48,6 +52,7 @@ export default function Contact() {
 
   const onSubmit = (data: InsertContactMessage) => {
     setIsSubmitting(true);
+    // The mutation handles setting `isSubmitting` back to false in onSuccess/onError
     contactMutation.mutate(data);
   };
 
@@ -55,26 +60,30 @@ export default function Contact() {
     {
       icon: "fas fa-envelope",
       title: "Email", 
-      value: "ujjwal.amrit@example.com"
+      value: "ujjwalamrit54321@gmail.com"
     },
     {
       icon: "fas fa-phone",
       title: "Phone",
-      value: "+1 (555) 123-4567"
+      value: "+91 706-1864-269"
     },
     {
       icon: "fas fa-map-marker-alt", 
       title: "Location",
-      value: "San Francisco, CA"
+      value: "Noida, India"
     }
   ];
 
   const socialLinks = [
-    { icon: "fab fa-github", href: "#" },
-    { icon: "fab fa-linkedin", href: "#" },
-    { icon: "fab fa-twitter", href: "#" },
-    { icon: "fab fa-instagram", href: "#" }
+    { icon: "fab fa-github", href: "https://github.com/UjjwalAmrit" },
+    { icon: "fab fa-linkedin", href: "https://www.linkedin.com/in/ujjwalamrit/" },
+    { icon: "fab fa-twitter", href: "https://x.com/AMRITUJJWAL07" },
+    { icon: "fab fa-instagram", href: "https://www.instagram.com/feature.swag.07/" }
   ];
+  
+  // Use the mutation state for disabling the button
+  const buttonDisabled = isSubmitting || contactMutation.isLoading;
+  const buttonText = contactMutation.isLoading ? "Sending..." : "Send Message";
 
   return (
     <section id="contact" className="py-20 bg-muted/10">
@@ -192,11 +201,13 @@ export default function Contact() {
               
               <Button 
                 type="submit" 
-                disabled={isSubmitting}
+                // Use the derived state
+                disabled={buttonDisabled}
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90 flex items-center justify-center space-x-2"
                 data-testid="btn-send-message"
               >
-                <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
+                {/* Use the derived text */}
+                <span>{buttonText}</span>
                 <i className="fas fa-paper-plane" />
               </Button>
             </form>
