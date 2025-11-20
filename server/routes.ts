@@ -1,5 +1,3 @@
-// server/routes.ts 
-
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
@@ -12,8 +10,8 @@ const formatMessage = (text: string) => text.replace(/\n/g, '<br>');
 
 export async function registerRoutes(app: Express): Promise<Server> {
     
-    // 1. Access the Environment Variables INSIDE the function, 
-    // ensuring dotenv has run in index.ts before these are accessed.
+    // 1. Access the Environment Variables INSIDE the function.
+    // This resolves the 'Missing credentials' error caused by execution timing.
     const PORTFOLIO_OWNER_EMAIL = process.env.OWNER_EMAIL as string; 
     const SENDING_EMAIL_USER = process.env.EMAIL_USER as string; 
     const SENDING_EMAIL_PASS = process.env.EMAIL_PASS as string; 
@@ -61,7 +59,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
                 subject: `✅ Confirmation: We received your message!`,
                 html: `
                     <p>Hi ${name},</p>
-                    <p>Thank yourself for reaching out! We've successfully received your message and will get back to you as soon as possible.</p>
+                    <p>Thank you for reaching out! We've successfully received your message and will get back to you as soon as possible.</p>
                     <p>Here is a copy of your submission:</p>
                     <blockquote style="border-left: 3px solid #007bff; padding-left: 15px; margin: 15px 0; background-color: #f7f7f7; padding: 10px;">
                         <strong>Subject:</strong> ${subject}<br/>
@@ -85,7 +83,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
             });
 
         } catch (error) {
-            // Log the error for debugging in the server terminal
             console.error('API Error (Email or Validation Failure):', error); 
             
             if (error instanceof z.ZodError) {
